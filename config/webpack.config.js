@@ -535,11 +535,14 @@ module.exports = function(webpackEnv) {
       // See https://github.com/facebook/create-react-app/issues/186
       isEnvDevelopment &&
         new WatchMissingNodeModulesPlugin(paths.appNodeModules),
+        // new TreatPlugin({
+        //   outputLoaders: [MiniCssExtractPlugin.loader]
+        // }),
+        new MiniCssExtractPlugin(),
+      isEnvProduction &&
         new TreatPlugin({
           outputLoaders: [MiniCssExtractPlugin.loader]
         }),
-        new MiniCssExtractPlugin(),
-      isEnvProduction &&
         new MiniCssExtractPlugin({
           // Options similar to the same options in webpackOptions.output
           // both options are optional
