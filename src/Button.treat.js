@@ -1,6 +1,6 @@
 import { style } from 'treat';
 
 export const button = style({
-  backgroundColor: 'blue',
+  backgroundColor: 'red',
   height: 48
 });

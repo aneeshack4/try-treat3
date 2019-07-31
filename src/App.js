@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Button text="hello world"></Button>
-      {/* <TreatProvider theme={theme}><Button2>HAII</Button2></TreatProvider> */}
+      <TreatProvider theme={theme}><Button2>HAII</Button2></TreatProvider>
     </div>
   );
 }

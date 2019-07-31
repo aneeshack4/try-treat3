@@ -535,9 +535,7 @@ module.exports = function(webpackEnv) {
       // See https://github.com/facebook/create-react-app/issues/186
       isEnvDevelopment &&
         new WatchMissingNodeModulesPlugin(paths.appNodeModules),
-        // new TreatPlugin({
-        //   outputLoaders: [MiniCssExtractPlugin.loader]
-        // }),
+        new TreatPlugin(),
         new MiniCssExtractPlugin(),
       isEnvProduction &&
         new TreatPlugin({
