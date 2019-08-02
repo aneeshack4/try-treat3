@@ -1,6 +1,6 @@
 import { createTheme } from 'treat';
 
 export default createTheme({
-  brandColor: 'blue',
+  brandColor: 'pink',
   grid: 4
 });
